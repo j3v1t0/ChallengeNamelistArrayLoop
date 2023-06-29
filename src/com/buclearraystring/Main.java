@@ -53,13 +53,17 @@ public class Main {
     }
 
     static void mostrarListaNombres(){
-        System.out.println("Lista de Nombres: ");
-        for (int contadorList = 0; contadorList < stringList.length; contadorList++){
-            if (stringList != null){
-                int aumentoContadorList = contadorList + 1;
-                System.out.println(aumentoContadorList + " - " + stringList[contadorList]);
+        if(stringList.length != 0) {
+            System.out.println("Lista de Nombres: ");
+            for (int contadorList = 0; contadorList < stringList.length; contadorList++) {
+                if (stringList != null) {
+                    int aumentoContadorList = contadorList + 1;
+                    System.out.println(aumentoContadorList + " - " + stringList[contadorList]);
+                }
             }
+            System.out.println("--------------------Fin Lista--------------------");
+        }else {
+            System.out.println("--------------------Lista dee nombres vacia--------------------");
         }
-        System.out.println("--------------------Fin Lista--------------------");
     }
 }
